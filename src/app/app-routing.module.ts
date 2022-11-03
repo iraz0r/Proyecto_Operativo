@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'error',
     loadChildren: () => import('./error/error.module').then( m => m.ErrorPageModule)
   },
+  {
+    path: 'modificar',
+    loadChildren: () => import('./modificar/modificar.module').then( m => m.ModificarPageModule)
+  },
+  {
+    path: 'agregar',
+    loadChildren: () => import('./agregar/agregar.module').then( m => m.AgregarPageModule)
+  },
 ];
 
 @NgModule({
