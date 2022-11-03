@@ -25,7 +25,7 @@ export class ModificarPage implements OnInit {
 
   editar(){
     this.dbservice.updateNoticia(this.idNoticia, this.tituloNoticia,this.textoNoticia);
-    this.dbservice.presentToast("Noticia Modificada");
+    this.dbservice.presentToast("ODT Modificada");
     this.router.navigate(['/home']);
   }
 

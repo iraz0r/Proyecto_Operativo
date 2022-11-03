@@ -12,8 +12,8 @@ export class HomePage {
 
   noticias: any = [
     {
-      titulo: "Titulo de la Noticia",
-      texto: "Texto de la noticia que quiero que salga en el cuerpo del item"
+      titulo: "Titulo de la ODT",
+      texto: "Texto de la ODT que quiero que salga en el cuerpo del item"
     }
   ]
 
@@ -81,7 +81,7 @@ export class HomePage {
 
   eliminar(item) {
     this.servicioBD.deleteNoticia(item.id);
-    this.servicioBD.presentToast("Noticia Eliminada");
+    this.servicioBD.presentToast("ODT Eliminada");
   }
 
 }

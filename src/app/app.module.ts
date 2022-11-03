@@ -16,10 +16,12 @@ import { DbserviceService } from './services/dbservice.service';
 import { AutService } from './services/aut.service';
 import { AutenthicationService } from './services/autenthication.service';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, IonicStorageModule.forRoot()],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, IonicStorageModule.forRoot(), HttpClientModule,],
   providers: [
     StatusBar,
     SplashScreen,

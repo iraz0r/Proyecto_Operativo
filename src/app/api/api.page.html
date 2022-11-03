@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      ODTes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item *ngFor="let ap of cama; let i=index">
+    <p color="primary">UserId {{ap.UserId}}</p>
+    <p>id {{ap.id}}</p>
+    <p>title {{ap.title}}</p>
+    <p>body {{ap.body}}</p>
+  </ion-item>
+</ion-content>

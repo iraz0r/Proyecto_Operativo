@@ -17,7 +17,7 @@ export class AgregarPage implements OnInit {
 
   guardar() {
     this.dbservice.addNoticia(this.tituloNoticia,this.textoNoticia);
-    this.dbservice.presentToast("Noticia Agregada");
+    this.dbservice.presentToast("ODT Agregada");
     this.router.navigate(['/home']);
   }
 

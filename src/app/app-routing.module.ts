@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'inicio',
     loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
   },
+  {
+    path: 'api',
+    loadChildren: () => import('./api/api.module').then( m => m.ApiPageModule)
+  },
 ];
 
 @NgModule({
