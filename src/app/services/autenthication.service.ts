@@ -70,7 +70,7 @@ export class AutenthicationService {
           .then((response)=>{ // Si la sentencia se ejecuto correctamente sin errores
             this.storage.set("USER_DATA",data); // Guardamos la data retornada
             this.authState.next(true);
-            this.router.navigate(['home']); // Y se navega hasta el home
+            this.router.navigate(['inicio']); // Y se navega hasta el home
             
           });
         }
